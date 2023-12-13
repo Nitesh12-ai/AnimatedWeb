@@ -1,5 +1,5 @@
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'montserrat';
@@ -13,14 +13,15 @@
     display: flex;
     color: black;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     padding: 0 150px;
     gap: 60px;
     position: fixed;
-    z-index:99;
+    z-index: 99;
 
 }
-#cursor{
+
+#cursor {
     height: 25px;
     width: 25px;
     background-color: green;
@@ -29,36 +30,39 @@
     z-index: 99;
 }
 
-#cursor-blur{
+#cursor-blur {
     height: 40px;
     width: 25px;
     background-color: green;
     border-radius: 50%;
     position: fixed;
     filter: blur(30px);
-   
+
 }
-#scroller{
+
+#scroller {
     /*background-color: red;*/
-    white-space:nowrap;
+    white-space: nowrap;
     text-align: bottom;
-    overflow-x: auto;   /*scroller give*/ 
+    overflow-x: auto;
+    /*scroller give*/
     overflow-y: hidden;
     color: white;
     position: relative;
     z-index: 10;
-   
 
-    
-    
+
+
+
 }
-#scroller h4{
+
+#scroller h4 {
     display: inline-block;
     font-size: 60px;
     font-weight: 150;
     font-family: gilroy;
     margin-right: 10px;
-    -webkit-text-stroke: 2px rgba(0, 0, 255, 0.84);
+    -webkit-text-stroke: 2px rgba(89, 89, 181, 0.84);
     color: transparent;
     margin-left: 200px;
     /*animation-name: scroll;
@@ -66,16 +70,16 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;*/
     transition: all linear 0.5s;
-    
+
 
 }
 
-#scroller h4:hover{
+#scroller h4:hover {
     color: yellow;
 
 }
 
-#scroller-in{
+#scroller-in {
     display: inline-block;
     white-space: nowrap;
     animation-name: scroll;
@@ -84,79 +88,86 @@
 
 }
 
-@keyframes scroll{
-    from{
+@keyframes scroll {
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
 
-#scroller::-webkit-scrollbar{
+#scroller::-webkit-scrollbar {
     display: none
-
 }
 
 
-#nav img{
+#nav img {
     height: 80px;
 }
-#nav h4{
+
+#nav h4 {
     text-transform: uppercase;
 
 }
 
-#nav ::before{
+#nav ::before {
     color: red;
 
 }
-video{
-    height:100%;
-    width:100%;
+
+video {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    position:fixed;
+    position: fixed;
     z-index: -1;
 }
-#main{
+
+#main {
     position: relative;
-    background-color:rgba(154, 148, 148, 0.059);
+    background-color: rgba(154, 148, 148, 0.059);
 
 
-}  
+}
 
-#page1{
+#page1 {
     height: 100vh;
-    width: 100%; 
+    width: 100%;
     /*background-color: red; */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
-    z-index : 9;
+    flex-direction: column;
+    z-index: 9;
 }
-#page1 h1{
+
+#page1 h1 {
     font-size: 140px;
     font-weight: 900;
 }
-#page1 h1::before{
-    content:"Eat.Drink.Play";
-    position:absolute;
+
+#page1 h1::before {
+    content: "Foreign Affairs";
+    position: absolute;
     color: rgb(69, 6, 6);
     -webkit-text-stroke: 2px rgba(255, 0, 0, 0.884);
-    z-index:-1;
-    
+    z-index: -1;
+
 
 }
-#page1 h2{
+
+#page1 h2 {
     font-size: 40px;
     font-weight: 800;
     margin-top: 10px;
     margin-bottom: 20px;
 
 }
-#page1 p{
+
+#page1 p {
     font-size: 20px;
     font-weight: 500;
     width: 25%;
@@ -172,20 +183,27 @@ video{
 
 
 .button {
-    
-    
-    transform: translate(-50%, -50%); /* center the button */
+
+
+    transform: translate(-50%, -50%);
+    /* center the button */
     /*z-index: 2; /* set a higher z-index than the image */
-    background-color: #a0dde0; /* set your desired background color */
-    color: #98ad23; /* set your desired text color */
-    border: none; /* remove button border */
-    padding: 1px 18px; /* set your desired padding */
-    cursor: pointer; /* change mouse cursor on hover */
+    background-color: #a0dde0;
+    /* set your desired background color */
+    color: #98ad23;
+    /* set your desired text color */
+    border: none;
+    /* remove button border */
+    padding: 1px 18px;
+    /* set your desired padding */
+    cursor: pointer;
+    /* change mouse cursor on hover */
     border-radius: 15px;
     margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 8px;
-  }  
+}
+
 /*
   .pushablebutton {
     background: hsl(69, 79%, 39%);
@@ -215,135 +233,161 @@ video{
 
   */
 
-  .button1 {
-    transform: translate(-50%, -50%); /* center the button */
+.button1 {
+    transform: translate(-50%, -50%);
+    /* center the button */
     /*z-index: 2; /* set a higher z-index than the image */
-    background-color: #a0dde0; /* set your desired background color */
-    color: #98ad23; /* set your desired text color */
-    border: none; /* remove button border */
-    padding: 1px 18px; /* set your desired padding */
-    cursor: pointer; /* change mouse cursor on hover */
+    background-color: #a0dde0;
+    /* set your desired background color */
+    color: #98ad23;
+    /* set your desired text color */
+    border: none;
+    /* remove button border */
+    padding: 1px 18px;
+    /* set your desired padding */
+    cursor: pointer;
+    /* change mouse cursor on hover */
     border-radius: 15px;
     margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 8px;
 
-  }
+}
 
-  .button2 {
-    transform: translate(-50%, -50%); /* center the button */
+.button2 {
+    transform: translate(-50%, -50%);
+    /* center the button */
     /*z-index: 2; /* set a higher z-index than the image */
-    background-color: #a0dde0; /* set your desired background color */
-    color: #98ad23; /* set your desired text color */
-    border: none; /* remove button border */
-    padding: 1px 18px; /* set your desired padding */
-    cursor: pointer; /* change mouse cursor on hover */
+    background-color: #a0dde0;
+    /* set your desired background color */
+    color: #98ad23;
+    /* set your desired text color */
+    border: none;
+    /* remove button border */
+    padding: 1px 18px;
+    /* set your desired padding */
+    cursor: pointer;
+    /* change mouse cursor on hover */
     border-radius: 15px;
     margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 8px;
-  }
+}
 
-  .button3 {
-    transform: translate(-50%, -50%); /* center the button */
+.button3 {
+    transform: translate(-50%, -50%);
+    /* center the button */
     /*z-index: 2; /* set a higher z-index than the image */
-    background-color: #a0dde0; /* set your desired background color */
-    color: #98ad23; /* set your desired text color */
-    border: none; /* remove button border */
-    padding: 1px 18px; /* set your desired padding */
-    cursor: pointer; /* change mouse cursor on hover */
+    background-color: #a0dde0;
+    /* set your desired background color */
+    color: #98ad23;
+    /* set your desired text color */
+    border: none;
+    /* remove button border */
+    padding: 1px 18px;
+    /* set your desired padding */
+    cursor: pointer;
+    /* change mouse cursor on hover */
     border-radius: 15px;
     margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 8px;
-  }
+}
 
-  .button4 {
-    transform: translate(-50%, -50%); /* center the button */
+.button4 {
+    transform: translate(-50%, -50%);
+    /* center the button */
     /*z-index: 2; /* set a higher z-index than the image */
-    background-color: #a0dde0; /* set your desired background color */
-    color: #98ad23; /* set your desired text color */
-    border: none; /* remove button border */
-    padding: 9px 18px; /* set your desired padding */
-    cursor: pointer; /* change mouse cursor on hover */
+    background-color: #a0dde0;
+    /* set your desired background color */
+    color: #98ad23;
+    /* set your desired text color */
+    border: none;
+    /* remove button border */
+    padding: 9px 18px;
+    /* set your desired padding */
+    cursor: pointer;
+    /* change mouse cursor on hover */
     border-radius: 15px;
     margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 8px;
 
-  }
+}
 
-#about-us{
-    height:60vh;
+#about-us {
+    height: 60vh;
     width: 100%;
     /*background-color: red;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-    position:relative;
+    position: relative;
     justify-content: space-around;
 }
 
-#about-us img{
-    height:150px;
-    width:150px;
+#about-us img {
+    height: 150px;
+    width: 150px;
     border-radius: 30px;
     object-fit: cover;
-   
-    
+
+
 
 }
 
-#about-us-in{
-    width:50%;
+#about-us-in {
+    width: 50%;
     text-align: center;
 }
 
-#about-us-in h3{
+#about-us-in h3 {
     font-size: 50px;
     font-weight: 200;
     margin-bottom: 40px;
 
 }
-#about-us-in p{
+
+#about-us-in p {
     font-size: 20px;
     line-height: 26px;
-    
+
 
 }
 
-#cards-container{
+#cards-container {
     /*background-color: red;*/
     height: 60vh;
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     position: relative;
     z-index: 10;
 }
 
 
-.card{
+.card {
     position: relative;
     width: 350px;
     overflow: hidden;
-    border-radius:10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    
-    
+
+
 
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
 
 }
-.card img{
+
+.card img {
     width: 100%;
     height: auto;
-    border-radius: 30px ;
+    border-radius: 30px;
 
 }
 
@@ -353,7 +397,7 @@ video{
     bottom: 0;
     left: 0;
     width: 100px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 15px;
     box-sizing: border-box;
@@ -361,7 +405,7 @@ video{
     transition: transform 0.3s;
 }
 
-.card:hover .card-text{
+.card:hover .card-text {
     transform: translateY(0);
 }
 
@@ -375,68 +419,73 @@ video{
 }
 */
 
-#container{
+#container {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    
+
 }
 
-.container .text{
+.container .text {
     position: relative;
     color: blue;
     font-size: 30px;
-    font-weight:200;
+    font-weight: 200;
 }
 
-.container .text.first-text{
+.container .text.first-text {
     color: white;
 }
 
-.text.sec-text:before{
+.text.sec-text:before {
     content: "";
     position: absolute;
-    top : 0;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     /*background-color: red;*/
     border-left: 2px solid blue;
     animation: animate 4s steps(12) infinite;
-    
+
 }
-.container .text.sec-text{
+
+.container .text.sec-text {
     font-size: 75px;
 }
 
-@keyframes animate{
-    40%, 60% {
+@keyframes animate {
+
+    40%,
+    60% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: 20%;
     }
 }
 
 
-#green-div{
+#green-div {
     height: 30vh;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     padding-left: 25%;
     background-color: rgb(159, 115, 115);
 }
-#green-div h4{
+
+#green-div h4 {
     width: 50%;
     font-size: 23px;
     text-transform: uppercase;
 }
 
 
-#page3{
+#page3 {
     height: 100vh;
     width: 100%;
     background-color: rgb(199, 166, 166);
@@ -449,7 +498,7 @@ video{
 
 }
 
-#page3>p{
+#page3>p {
     font-size: 30px;
     font-weight: 700;
     width: 40%;
@@ -459,22 +508,119 @@ video{
 
 }
 
-#page3> img{
+#page3>img {
     position: absolute;
     height: 60px;
 }
 
-#page3 #colon1{
+#page3 #colon1 {
     left: 15%;
-    top: 70%;
+    top: 65%;
 }
 
-#page3 #colon2{
-    bottom: 17%;
+#page3 #colon2 {
+    bottom: 24%;
     right: 15%;
 }
 
-#page4{
+.elem1 {
+    height: 70%;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.elem1 h2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(94, 150, 150);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+
+
+}
+
+.elem1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.1;
+
+
+
+
+}
+
+.elem1:hover h2 {
+    color: white;
+    background-color: transparent;
+
+}
+
+.elem1:hover img {
+    scale: 1;
+
+}
+
+.elem2 {
+    height: 70%;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.elem2 h2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(94, 150, 150);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+
+
+}
+
+.elem2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.1;
+
+
+
+
+}
+
+.elem2:hover h2 {
+    color: white;
+    background-color: transparent;
+
+}
+
+.elem2:hover img {
+    scale: 1;
+
+}
+
+
+
+
+
+
+#page4 {
     height: 50vh;
     width: 100%;
     /*background-color: red;*/
@@ -486,56 +632,56 @@ video{
 
 }
 
-.elem{
-    height:70%;
+.elem {
+    height: 70%;
     width: 20%;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
 }
 
-.elem h2{
+.elem h2 {
     height: 100%;
     width: 100%;
     background-color: greenyellow;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    font-size:20px;
+    font-size: 20px;
     position: absolute;
     z-index: 10;
     transition: all ease 0.5s;
 
-    
+
 }
 
-.elem img{
+.elem img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: all ease 0.5s;
     scale: 1.1;
-    
 
-    
+
+
 
 }
 
-.elem:hover h2{
+.elem:hover h2 {
     color: white;
     background-color: transparent;
 
 }
 
-.elem:hover img{
+.elem:hover img {
     scale: 1;
 
 }
 
-#footer{
+#footer {
     height: 40vh;
     width: 100%;
-    background: linear-gradient(to left bottom,rgb(144, 115, 61),rgb(192, 106, 106));
+    background: linear-gradient(to left bottom, rgb(144, 115, 61), rgb(192, 106, 106));
 
 
 }
@@ -558,12 +704,3 @@ video{
 }
 
 */
-
-
-
-
-
-
-
-
-  
