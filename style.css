@@ -519,7 +519,7 @@ video {
 }
 
 #page3 #colon2 {
-    bottom: 24%;
+    bottom: 14%;
     right: 15%;
 }
 
@@ -643,7 +643,7 @@ video {
 .elem h2 {
     height: 100%;
     width: 100%;
-    background-color: greenyellow;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -704,3 +704,21 @@ video {
 }
 
 */
+
+#animated-footer {
+    background-color: #dfacac;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+

@@ -127,4 +127,20 @@ textLoad();
 setInterval(textLoad, 12000);
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the footer element
+    var footer = document.getElementById("animated-footer");
 
+    // Calculate the height of the footer
+    var footerHeight = footer.offsetHeight;
+
+    // Set a timeout to delay the animation
+    setTimeout(function () {
+        // Move the footer to the normal position
+        footer.style.bottom = "0";
+    }, 500); // You can adjust the delay (in milliseconds) as needed
+});
+
+// In this example, the footer initially starts at the bottom of the page with a negative bottom value. When the page is loaded, a JavaScript event listener triggers after the DOM content is loaded. It then sets a timeout to delay the animation for a smooth effect and moves the footer to the normal position.
+
+//Feel free to customize the styles and animations according to your preferences and the overall design of your website.
